@@ -4,6 +4,7 @@ pygame.font.init()
 f=pygame.font.get_default_font()
 shrift=pygame.font.SysFont("arial",50)
 def kub_poyavis(okno,kub,hp_kuba):
+    fon = pygame.image.load("fon.jpeg")
 
     pygame.draw.rect(okno, [0,39,255],kub,0,15)
     pygame.draw.rect(okno, [233, 20, 0], kub,5,15)

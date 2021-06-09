@@ -1,24 +1,31 @@
 import  pygame,briks,time
 from pygame import display, event
-okno = display.set_mode([750, 820])
+okno = display.set_mode([700, 800])
+fon = pygame.image.load("fon.jpeg")
+
 spisok_kubika=[]
-gggg=[100,200,300,400,500,600]
-
-for did in gggg:
-    kub1 = pygame.Rect(0,did, 100, 100)
-    kub1.centerx = okno.get_width() / 2
-    spisok_kubika.append(kub1)
+y2=[100,200,300,400,500,600]
+x2=[150,250,350,450]
+0
+for x1 in x2:
 
 
-    print(did)
+    for y1 in y2:
+        kub1 = pygame.Rect(x1,y1, 100, 100)
+        spisok_kubika.append(kub1)
 
-okno = display.set_mode([750, 820])
+
+
+
+
 # ДЕНЬ РОЖДЕНИЯ У МОЕГО УЧИТЕЛЯ 4 СЕНТЯБРЯ!!(cool) 
 hp_kuba=2
 while True :
 
     pygame.event.get()
     okno.fill([0,0,0])
+    okno.blit(fon, [0, 0])
+
     # pygame.display.flip()
     # time.sleep(1)
     for did in spisok_kubika:
