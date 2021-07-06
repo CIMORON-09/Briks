@@ -31,13 +31,13 @@ while True :
     pygame.event.get()
     okno.fill([0,0,0])
     okno.blit(fon, [0, 0])
+    ball.x+=1
 
+    # for did in spisok_kubika:
+    #
+    #     briks.kub_poyavis(okno,did)
 
-    for did in spisok_kubika:
-
-        briks.kub_poyavis(okno,did)
-
-        ball.risovanie_ball(okno,did)
-
+    ball.risovanie_ball(okno)
+    ball.slezhu_za_granicami()
     pygame.display.flip()
 
