@@ -2,10 +2,11 @@ import pygame,briks,ball
 from pygame import display
 okno = display.set_mode([700, 800])
 
+x=10
+y=200
 fon = pygame.image.load("fon.png")
 p=fon.get_height()/fon.get_width()
 fon = pygame.transform.scale(fon, [700,int(700*p)])
-
 spisok_kubika=[]
 y2=[100,200,300,400,500,600]
 x2=[150,250,350,450]
@@ -31,13 +32,13 @@ while True :
     pygame.event.get()
     okno.fill([0,0,0])
     okno.blit(fon, [0, 0])
-    ball.x+=1
+    ball.balle.x+=1
 
     # for did in spisok_kubika:
     #
     #     briks.kub_poyavis(okno,did)
 
-    ball.risovanie_ball(okno)
-    ball.slezhu_za_granicami()
+    ball.risovanie_ball(okno,x,y)
+    # ball.slezhu_za_granicami()
     pygame.display.flip()
 
