@@ -1,11 +1,27 @@
-import pygame
+import pygame,briks
 
 def obrabotk_sobity():
     spisok=pygame.event.get()
-    # werty=len(spisok)
     for did in spisok:
         if did.type==pygame.MOUSEBUTTONDOWN:
-            print(did.pos[0],did.pos[1])
+
+            # for dip in briks.spisok_kubika:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            # werty=len(spisok)
+
     # if werty!=0:
     #     # print(spisok)
     #     print(spisok[0])
